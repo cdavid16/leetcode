@@ -1,4 +1,4 @@
-class Solution {
+class LongestPalindromicSubstring {
     public String longestPalindrome(String s) {
         if(s.length() > 1000)
             throw new IllegalArgumentException("String is longer than 1000 characters");
