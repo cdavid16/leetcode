@@ -1,4 +1,4 @@
-class Solution {
+class StringtoIntegerAtoi {
 
     public int myAtoi(String str) {
         //ascii value for numbers: 48-57
