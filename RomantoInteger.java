@@ -1,4 +1,4 @@
-class Solution {
+class RomantoInteger {
     public int romanToInt(String s) {
         int result = 0;
         HashMap map = new HashMap();
