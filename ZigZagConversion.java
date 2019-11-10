@@ -1,4 +1,5 @@
-public String convert(String s, int numRows) {
+class ZigZagConversion{
+	public String convert(String s, int numRows) {
         
         if(numRows<=1 || numRows > s.length())
             return s;
@@ -43,3 +44,4 @@ public String convert(String s, int numRows) {
 		
 		return ns;
 	}
+}
