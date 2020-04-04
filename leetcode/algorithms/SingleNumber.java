@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class SingleNumber {
 
-  public int singleNumber(int[] nums) {
+  /*public int singleNumber(int[] nums) {
 
     if (nums.length == 1)
       return nums[0];
@@ -21,8 +21,23 @@ public class SingleNumber {
       if (e.getValue() == 1)
         return e.getKey();
     }
-
     return 0;
+  }*/
+  
+  public int singleNumber(int[] nums) {
+      int sum = nums[0];
+      for(int i=1; i<nums.length;i++){
+          if(i%2==1){
+              sum-=nums[i];
+          }else{
+              sum+=nums[i];
+          }
+      }
+      return sum;
   }
 
+
+
+  
+  
 }
