@@ -35,12 +35,6 @@ n == rating.length
 public class CountNumberTeams {
 	public int numTeams(int[] rating) {
 		int noTeams=0;
-		int heap;
-		int[] maxHeap = new int[3]; 
-		int[] minHeap = new int[3];
-		for(int i=0;i<rating.length;i++) {
-		    
-		}
 		return noTeams;
     }
 }

@@ -17,7 +17,7 @@ class RomantoInteger {
         {
             //System.out.println(s.charAt(i));
 
-            if(map.get(s.charAt(i))==null)
+            if(map.get( (int) s.charAt(i))==null)
                 return 0;
 
             if(i>0)

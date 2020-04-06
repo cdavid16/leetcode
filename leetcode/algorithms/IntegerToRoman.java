@@ -49,8 +49,8 @@ class IntegerToRoman {
         return roman;
     }
 
-    private Stack createMap(){
-        Stack keys = new Stack<>();
+    private Stack<Character> createMap(){
+        Stack<Character> keys = new Stack<>();
         keys.add('I'); //1      //73
         keys.add('V'); //5      //86
         keys.add('X'); //10     //88

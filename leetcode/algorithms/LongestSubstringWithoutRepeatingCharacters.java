@@ -8,7 +8,7 @@ class LongestSubstringWithoutRepeatingCharacters{
         if(s.length()<=1 )
             return s.length();
 
-        HashSet<Character> set = new HashSet();
+        HashSet<Character> set = new HashSet<>();
         int max = 0;
         int i=0, j=0, n=s.length();
         while (i < n && j < n) {

@@ -10,7 +10,7 @@ class LongestCommonPrefix {
         if (strs.length <= 1 )
             return (strs.length==0?"":strs[0]);
 
-        Stack prefix = new Stack<Character>();
+        Stack<Integer> prefix = new Stack<Integer>();
         List<Integer> lengths = new LinkedList<>();
         for(String word: strs){
             lengths.add(word.length());
@@ -21,9 +21,9 @@ class LongestCommonPrefix {
         for(int i = 0; i<minLength; i++){
             for(int j = 0; j<strs.length; j++){
                 if(j==0)
-                    prefix.push(strs[j].charAt(i));
+                    prefix.push((int)strs[j].charAt(i));
                 else
-                    if((int)strs[j].charAt(i) != (int)(char)prefix.peek()){
+                    if((int)strs[j].charAt(i) != prefix.peek()){
                         prefix.pop();
                         return this.prefix(prefix);
                     }
@@ -38,11 +38,11 @@ class LongestCommonPrefix {
         return this.prefix(prefix);
     }
 
-    private String prefix(Stack<Character> prefix){
+    private String prefix(Stack<Integer> prefix){
         String str="";
 
-        for(char c : prefix){
-            str += Character.toString(c);
+        for(int c : prefix){
+            str += Character.toString((char)c);
         }
 
         return str;

@@ -14,14 +14,11 @@ package leetcode.algorithms;
 public class MoveZeroes {
     public void moveZeroes(int[] nums) {
         int currentIndex = 0;
-        int qty0 = 0;
         for(int i=0;i<nums.length;i++){
             if(nums[i]!=0){
                 nums[currentIndex] = nums[i];
                 currentIndex++;
-            } else{
-                qty0++;
-            }
+            } 
         }
         for(;currentIndex<nums.length;currentIndex++){
             nums[currentIndex]=0;
